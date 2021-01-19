@@ -1,7 +1,24 @@
-import React from 'react';
+import React from "react";
 
 const ErrorExample = () => {
-  return <h2>useState error example</h2>;
+  let title = "hi don";
+  // return (
+  //   <div>
+  //     <h1>{title}</h1>
+  //   </div>
+  // );
+  const clickHandler = () => {
+    title = "hello jajaja";
+    console.log(title);
+  };
+  return (
+    <div>
+      <h3>{title}</h3>
+      <button type="button" onClick={clickHandler(title)}>
+        presss
+      </button>
+    </div>
+  );
 };
 
 export default ErrorExample;
